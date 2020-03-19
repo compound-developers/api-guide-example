@@ -18,7 +18,7 @@ The listed contract addresses and ABIs might be out of date. They can be confirm
 
 1. Be sure to set an environment variable for the Ethereum wallet private 
 key.
-2. Replace the HTTP Provider URL with your own. Infura provides free API keys.
+2. Replace the HTTP Provider URL with your own. [Infura provides free API keys](https://infura.io/).
 
 ```js
 const walletPrivateKey = process.env.walletPrivateKey;
