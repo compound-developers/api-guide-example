@@ -1,6 +1,6 @@
 # Smart Contract API Example
 
-Example of accessing Ethereum smart contracts with an API.
+Example of accessing Ethereum smart contracts with an API in [Node.js](https://nodejs.org/en/download/).
 
 ## Setup
 
@@ -14,7 +14,7 @@ npm install
 
 The listed contract addresses and ABIs might be out of date. They can be confirmed here https://compound.finance/developers#networks.
 
-**Server.js**
+**server.js**
 
 1. Be sure to set an environment variable for the Ethereum wallet private 
 key.
