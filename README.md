@@ -1,6 +1,6 @@
 # Smart Contract API Example
 
-Example of accessing Ethereum smart contracts with an API in [Node.js](https://nodejs.org/en/download/).
+Example code for building your own Ethereum smart contract API in [Node.js](https://nodejs.org/en/download/).
 
 ## Setup
 

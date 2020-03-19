@@ -1,7 +1,7 @@
 {
   "name": "api-guide-example",
   "version": "1.0.0",
-  "description": "Example Ethereum smart contract API made with Express.js and Infura.",
+  "description": "Example code for building your own Ethereum smart contract API made with Express.js and Infura.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
