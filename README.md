@@ -33,10 +33,47 @@ node server.js
 
 ## API Endpoint Example Calls
 
+These are the possible calls that can be made with [cURL](https://curl.haxx.se/download.html).
+
 ```bash
 curl localhost:3000/wallet-balance/eth/
 curl localhost:3000/wallet-balance/ceth/
 curl localhost:3000/supply/eth/9000
 curl localhost:3000/protocol-balance/eth/
 curl localhost:3000/redeem/eth/123
+```
+
+Here is an example of outputs for a series of API calls. The wallet started out with 100 ETH.
+
+```bash
+curl localhost:3000/wallet-balance/eth/
+> 100
+
+curl localhost:3000/wallet-balance/ceth/
+> 0
+
+curl localhost:3000/supply/eth/5
+> OK
+
+curl localhost:3000/protocol-balance/eth/
+> 4.999999999885010676
+
+curl localhost:3000/wallet-balance/eth/
+> 94.99788632
+
+curl localhost:3000/wallet-balance/ceth/
+> 249.85542658
+
+curl localhost:3000/redeem/eth/249.85542658
+> OK
+
+curl localhost:3000/protocol-balance/eth/
+> 0
+
+curl localhost:3000/wallet-balance/ceth/
+> 0
+
+curl localhost:3000/wallet-balance/eth/
+> 99.995909700269046879
+
 ```
