@@ -12,7 +12,7 @@ npm install
 
 **config.json**
 
-The listed contract addresses and ABIs might be out of date. They can be confirmed here https://compound.finance/developers#networks.
+The listed contract addresses and ABIs might be out of date. They can be confirmed here https://compound.finance/docs#networks.
 
 **server.js**
 
