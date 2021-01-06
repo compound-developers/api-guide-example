@@ -1,13 +1,15 @@
+require("dotenv").config(); // this ensures process.env. ... contains your .env file configuration values
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const Web3 = require('web3');
 const config = require('./config.json');
 
-const walletPrivateKey = process.env.walletPrivateKey;
-const web3 = new Web3('https://mainnet.infura.io/v3/_your_api_key_here_');
+const walletPrivateKey = process.env.walletPrivateKey; // make sure this is provided in your .env file
+const web3 = new Web3(`https://mainnet.infura.io/v3/${process.env.infuraProjectId}`);
 
 web3.eth.accounts.wallet.add(walletPrivateKey);
-const myWalletAddress = web3.eth.accounts.wallet[0].address;
+const myWalletAddress = process.env.walletAddress
 
 const cEthAddress = config.cEthAddress;
 const cEthAbi = config.cEthAbi;
